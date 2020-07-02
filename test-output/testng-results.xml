@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="2" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Welcome!! Calculator application has been initiated 
+]]>
+    </line>
+    <line>
+      <![CDATA[Parameter test completed successfully]]>
+    </line>
+    <line>
+      <![CDATA[
+ **** The operations have been completed. Exiting App ****.
+ 	 	 'HAVE A GREAT DAY!!!' 
+]]>
+    </line>
+  </reporter-output>
+  <suite name="Parameters TestSuite" duration-ms="65" started-at="2020-07-02T09:56:56Z" finished-at="2020-07-02T09:56:56Z">
+    <groups>
+    </groups>
+    <test name="Test 1" duration-ms="65" started-at="2020-07-02T09:56:56Z" finished-at="2020-07-02T09:56:56Z">
+      <class name="caloperations.parameters.CalcParameters">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:caloperations.parameters.CalcParameters@548a9f61]" name="openApp" is-config="true" duration-ms="12" started-at="2020-07-02T15:26:56Z" finished-at="2020-07-02T15:26:56Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Welcome!! Calculator application has been initiated 
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="FloatTestParameter(double, double, java.lang.String)[pri:0, instance:caloperations.parameters.CalcParameters@548a9f61]" name="FloatTestParameter" duration-ms="0" started-at="2020-07-02T15:26:56Z" finished-at="2020-07-02T15:26:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Multiply]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Parameter test completed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- FloatTestParameter -->
+        <test-method status="SKIP" signature="IntTestParameter(int, int, java.lang.String)[pri:0, instance:caloperations.parameters.CalcParameters@548a9f61]" name="IntTestParameter" duration-ms="0" started-at="2020-07-02T15:26:56Z" finished-at="2020-07-02T15:26:56Z">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "2.5"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "2.5"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.testng.internal.Parameters.convertType(Parameters.java:217)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:160)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:363)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:488)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1240)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:980)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1070)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IntTestParameter -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:caloperations.parameters.CalcParameters@548a9f61]" name="closeApp" is-config="true" duration-ms="0" started-at="2020-07-02T15:26:56Z" finished-at="2020-07-02T15:26:56Z">
+          <reporter-output>
+            <line>
+              <![CDATA[
+ **** The operations have been completed. Exiting App ****.
+ 	 	 'HAVE A GREAT DAY!!!' 
+]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- caloperations.parameters.CalcParameters -->
+    </test> <!-- Test 1 -->
+  </suite> <!-- Parameters TestSuite -->
+</testng-results>

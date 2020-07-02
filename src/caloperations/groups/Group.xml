@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression TestSuite">
+<test name="GroupsDemo">
+<parameter name="IntVal1" value="8"></parameter>
+<parameter name="IntVal2" value="2"></parameter>
+<parameter name="FloatVal1" value="5.6"></parameter>
+<parameter name="FloatVal2" value="6.8"></parameter>
+<groups>
+	<run>
+		<include name="Addition"></include>
+		<include name="Subtraction"/>
+		<exclude name="Float"></exclude>
+		
+	</run>
+</groups>
+	<classes>
+		<class name="caloperations.groups.CalcGroups"></class>
+	</classes>
+</test>
+</suite>
